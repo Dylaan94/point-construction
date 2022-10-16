@@ -16,4 +16,5 @@ export default function Layout({ children }) {
   );
 }
 
-const Container = styled.div``;
+const Container = styled.div`
+`;
