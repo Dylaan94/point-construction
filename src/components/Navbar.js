@@ -1,6 +1,8 @@
 /* Nav bar that utilises Gatsby-Link for page navigation.
 Clicking the point construction logo will return to home page
 Hovering over links will reduce opacity
+
+When screen size hits 1100px, will render mobile version
 */
 
 import React from "react";
