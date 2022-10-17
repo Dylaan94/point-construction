@@ -48,6 +48,7 @@ const Nav = styled.nav`
   background: #09041c;
   position: sticky;
   top: 0;
+  z-index: 99; // ensures nav does not get stuck behind any other elements
 `;
 
 const Container = styled.div`
