@@ -51,6 +51,18 @@ const TagLine = styled.p`
   font-size: 50px;
   font-weight: 300;
   align-self: flex-start;
+
+  @media screen and (max-width: 1130px) {
+    font-size: 40px;
+    align-self: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 920px) {
+    font-size: 32px
+  }
 `;
 
 const SubTagLine = styled.p`
@@ -59,6 +71,18 @@ const SubTagLine = styled.p`
   font-weight: 300;
   align-self: flex-end;
   text-align: right;
+
+  @media screen and (max-width: 1130px) {
+    font-size: 40px;
+    align-self: center;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 920px) {
+    font-size: 24px;
+  }
 `;
 
 const SectionFooter = styled.div`
