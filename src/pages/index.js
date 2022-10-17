@@ -7,6 +7,7 @@ import MainSection from "../components/MainSection";
 import WelcomeSection from "../components/WelcomeSection";
 import ContactUsBanner from "../components/ContactUsBanner";
 import CustomSlider from "../components/CustomCarousel";
+import CustomTextSection from "../components/CustomTextSection";
 
 const IndexPage = () => {
   return (
@@ -14,6 +15,7 @@ const IndexPage = () => {
       <MainSection />
       <WelcomeSection />
       <CustomSlider />
+      <CustomTextSection />
       <ContactUsBanner />
     </Layout>
   );
