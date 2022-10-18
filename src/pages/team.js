@@ -1,4 +1,5 @@
 import React from "react";
+import { SEO } from "../components/seo";
 
 // component imports
 import Layout from "../components/Layout";
@@ -11,3 +12,5 @@ export default function team() {
     </Layout>
   );
 }
+
+export const Head = () => <SEO title="Team Page" />;

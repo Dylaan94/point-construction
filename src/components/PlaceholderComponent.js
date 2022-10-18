@@ -11,7 +11,6 @@ export default function PlaceholderComponent({ pageTitle }) {
     <Root>
       <Container>
         <Header>
-          {" "}
           This is a Placeholder Component for the {pageTitle} Page
         </Header>
         <Text>
@@ -48,6 +47,18 @@ const Container = styled.div`
   justify-content: center;
   padding: 50px 0px;
 
+  // Fade in animation
+  animation: fadeIn 0.9s;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  // media queries for responsiveness
   @media screen and (max-width: 1100px) {
     text-align: center;
   }
@@ -57,6 +68,7 @@ const Header = styled.h2`
   font-size: 32px;
   font-weight: 600;
 
+  // media queries for responsiveness
   @media screen and (max-width: 550px) {
     font-size: 28px;
   }
@@ -67,6 +79,7 @@ const Text = styled.p`
   font-weight: 400;
   padding: 20px 0px;
 
+  // media queries for responsiveness
   @media screen and (max-width: 550px) {
     font-size: 14px;
   }
@@ -76,6 +89,7 @@ const Image = styled.img`
   width: 50%;
   padding: 20px 0px;
 
+  // media queries for responsiveness
   @media screen and (max-width: 1100px) {
     width: 80%;
   }

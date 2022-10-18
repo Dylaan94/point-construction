@@ -2,9 +2,12 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
+
 module.exports = {
   siteMetadata: {
     title: `point-construction`,
+    description: `brochure site for point construction`,
+    image:`src/images/icon.png`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [

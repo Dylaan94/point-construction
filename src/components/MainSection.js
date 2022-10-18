@@ -36,7 +36,7 @@ Tag and SubTag are seperated so that sizing can be adjusted when on mobile
 
 const TextDiv = styled.div`
   width: 80%;
-  height: 95%;
+  height: 85%;
   display: flex;
   flex-direction: column;
   justify-content: center;

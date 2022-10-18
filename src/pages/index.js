@@ -1,5 +1,5 @@
 import * as React from "react";
-import styled from "styled-components";
+import { SEO } from "../components/seo";
 
 // component imports
 import Layout from "../components/Layout";
@@ -23,4 +23,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <SEO title="Home Page" />;
