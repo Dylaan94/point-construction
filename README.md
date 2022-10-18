@@ -11,4 +11,5 @@
 - Clicking email link under 'Contact Us' opens up mail
 - Fully responsive across all device sizes
 - Navbar powered by Gatsby's Link which delivers lightening fast page navigation with intelligent pre-loading. Currently all other pages apart from Homepage only contain a placeholder component to demonstrate the routing speed
+- Simple CSS animations
 

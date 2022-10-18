@@ -9,6 +9,7 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
+
 // image imports
 import logo from "../images/logo.svg";
 import phone from "../images/phone.svg";
@@ -58,6 +59,18 @@ const Container = styled.div`
   min-height: 150px;
   width: 100%;
 
+  // Fade in animation
+  animation: fadeIn 0.9s;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  // media queries for responsiveness
   @media screen and (max-width: 1100px) {
     // reorders divs when scaling down to mobile
 
@@ -80,6 +93,7 @@ const Container = styled.div`
 const LogoDiv = styled.div`
   width: 22.5%;
 
+  // media queries for responsiveness
   @media screen and (max-width: 1100px) {
     width: 50%;
     display: flex;
@@ -90,6 +104,7 @@ const LogoDiv = styled.div`
 const Logo = styled.img`
   height: 63px;
 
+  // media queries for responsiveness
   @media screen and (max-width: 1100px) {
     height: 34px;
   }
@@ -101,8 +116,9 @@ const Links = styled.div`
   justify-content: space-around;
   width: 50%;
 
-  // hides links and adjusts sizing on mobile
+  // media queries for responsiveness
   @media screen and (max-width: 1100px) {
+    // hides links and adjusts sizing on mobile
     width: 20%;
     justify-content: flex-start;
     a {
@@ -133,6 +149,7 @@ const CallUs = styled.div`
   width: 22.5%;
   text-align: right;
 
+  // media queries for responsiveness
   @media screen and (max-width: 1100px) {
     width: 20%;
     p {
@@ -146,6 +163,7 @@ const CallUs = styled.div`
 const PhoneImg = styled.img`
   display: none;
 
+  // media queries for responsiveness
   @media screen and (max-width: 1100px) {
     display: inline;
     height: 24px;
@@ -155,6 +173,7 @@ const PhoneImg = styled.img`
 const HamburgerImg = styled.img`
   display: none;
 
+  // media queries for responsiveness
   @media screen and (max-width: 1100px) {
     display: inline;
     height: 20px;

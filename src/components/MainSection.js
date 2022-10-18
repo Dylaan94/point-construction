@@ -52,6 +52,18 @@ const TagLine = styled.p`
   font-weight: 300;
   align-self: flex-start;
 
+  // fly in animation
+  animation: flyInLeft 0.8s linear;
+  @keyframes flyInLeft {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  // media queries for responsiveness
   @media screen and (max-width: 1130px) {
     font-size: 40px;
     align-self: center;
@@ -61,7 +73,7 @@ const TagLine = styled.p`
   }
 
   @media screen and (max-width: 920px) {
-    font-size: 32px
+    font-size: 32px;
   }
 `;
 
@@ -72,6 +84,18 @@ const SubTagLine = styled.p`
   align-self: flex-end;
   text-align: right;
 
+  // fly in animation
+  animation: flyInRight 0.8s linear;
+  @keyframes flyInRight {
+    0% {
+      transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  // media queries for responsiveness
   @media screen and (max-width: 1130px) {
     font-size: 40px;
     align-self: center;
@@ -89,6 +113,17 @@ const SectionFooter = styled.div`
   height: 10%;
   display: flex;
   align-items: center;
+
+  // fade in animation. Fades in slightly after main text animation finishes
+  animation: fadeIn 3s;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 const StyledLink = styled(Link)`
