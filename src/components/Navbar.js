@@ -5,17 +5,19 @@ Hovering over links will reduce opacity
 When screen size hits 1100px, will render mobile version
 */
 
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-
 
 // image imports
 import logo from "../images/logo.svg";
 import phone from "../images/phone.svg";
 import hamburger from "../images/hamburger.svg";
+import close from "../images/close.svg";
 
 export default function Navbar() {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
   return (
     <Nav>
       <Container>
@@ -30,8 +32,25 @@ export default function Navbar() {
           <StyledLink to="/team"> Our Team </StyledLink>
           <StyledLink to="/projects"> Projects </StyledLink>
           <StyledLink to="/contact"> Contact Us </StyledLink>
-          {/* For mobile */}
-          <HamburgerImg src={hamburger} />
+          {/* For mobile, if hamburger has been clicked will display exit button */}
+
+          {hamburgerOpen ? (
+            <StyledButton
+              onClick={() => {
+                setHamburgerOpen(false);
+              }}
+            >
+              <HamburgerImg src={close} />
+            </StyledButton>
+          ) : (
+            <StyledButton
+              onClick={() => {
+                setHamburgerOpen(true);
+              }}
+            >
+              <HamburgerImg src={hamburger} />
+            </StyledButton>
+          )}
         </Links>
         <CallUs id="call-div">
           <p>Call us today: 0115 971 8908</p>
@@ -39,6 +58,19 @@ export default function Navbar() {
           <PhoneImg src={phone} />
         </CallUs>
       </Container>
+      {/* Checks if the hamburger button has been pressed and renders links */}
+      {hamburgerOpen ? (
+        <HamburgerLinks>
+          <StyledMobileLink to="/">Home</StyledMobileLink>
+          <StyledMobileLink to="/services"> Our Services </StyledMobileLink>
+          <StyledMobileLink to="/about"> About Us </StyledMobileLink>
+          <StyledMobileLink to="/team"> Our Team </StyledMobileLink>
+          <StyledMobileLink to="/projects"> Projects </StyledMobileLink>
+          <StyledMobileLink to="/contact"> Contact Us </StyledMobileLink>
+        </HamburgerLinks>
+      ) : (
+        <></>
+      )}
     </Nav>
   );
 }
@@ -177,5 +209,44 @@ const HamburgerImg = styled.img`
   @media screen and (max-width: 1100px) {
     display: inline;
     height: 20px;
+  }
+`;
+
+const HamburgerLinks = styled.div`
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  background: #394659;
+
+  @media screen and (min-width: 1100px) {
+    display: none;
+  }
+`;
+
+const StyledMobileLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+  font-size: 45px;
+  font-weight: 400;
+  text-align: center;
+  padding: 30px 0px;
+
+  :visited {
+    color: white;
+  }
+
+  :hover {
+    opacity: 0.8;
+  }
+`;
+
+// styled button for hamburger menu
+const StyledButton = styled.button`
+  display: none;
+  @media screen and (max-width: 1100px) {
+    display: inline;
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 `;
