@@ -57,7 +57,7 @@ export default function Navbar() {
         <CallUs id="call-div">
           <p>Call us today: 0115 971 8908</p>
           {/* For mobile */}
-          <PhoneImg src={phone} />
+          <PhoneImg src={phone} alt="phone icon" />
         </CallUs>
       </Container>
       {/* Checks if the hamburger button has been pressed and renders links */}
