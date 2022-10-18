@@ -43,7 +43,8 @@ export default function WelcomeSection() {
       <Container>
         <InView
           as="div"
-          onChange={(inView, entry) =>
+          triggerOnce={true}
+          onChange={(inView) =>
             inView ? startAnimations() : console.log("Inview: ", inView)
           }
         >

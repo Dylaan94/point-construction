@@ -6,19 +6,41 @@ At 800px the contact us button will be positioned under the text as in the desig
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { InView } from "react-intersection-observer";
 
 export default function ContactUsBanner() {
+  const startAnimations = () => {
+    // banner animation
+    let banner = document.getElementById("contactUs-banner");
+    banner.animate(
+      [
+        // keyframes
+        { opacity: 0 },
+        { opacity: 1 },
+      ],
+      { duration: 800 }
+    );
+  };
+
   return (
-    <Container>
-      <TextDiv>
-        <p>Have a project in mind?</p>
-      </TextDiv>
-      <ContactDiv>
-        <StyledLink to="/contact">
-          <p>Contact us</p>
-        </StyledLink>
-      </ContactDiv>
-    </Container>
+    <InView
+      as="div"
+      triggerOnce={true}
+      onChange={(inView) =>
+        inView ? startAnimations() : console.log("Inview: ", inView)
+      }
+    >
+      <Container id="contactUs-banner">
+        <TextDiv>
+          <p>Have a project in mind?</p>
+        </TextDiv>
+        <ContactDiv>
+          <StyledLink to="/contact">
+            <p>Contact us</p>
+          </StyledLink>
+        </ContactDiv>
+      </Container>
+    </InView>
   );
 }
 
