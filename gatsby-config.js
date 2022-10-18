@@ -37,5 +37,11 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: "gatsby-plugin-html-attributes",
+      options: {
+        lang: "en",
+      },
+    },
   ],
 };

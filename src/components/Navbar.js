@@ -22,8 +22,8 @@ export default function Navbar() {
     <Nav>
       <Container>
         <LogoDiv id="logo-div">
-          <Link to="/">
-            <Logo src={logo}></Logo>
+          <Link aria-label="link to homepage" to="/">
+            <Logo src={logo} alt="point construction logo"></Logo>
           </Link>
         </LogoDiv>
         <Links id="links-div">
@@ -36,19 +36,21 @@ export default function Navbar() {
 
           {hamburgerOpen ? (
             <StyledButton
+              aria-label="close hamburger menu"
               onClick={() => {
                 setHamburgerOpen(false);
               }}
             >
-              <HamburgerImg src={close} />
+              <HamburgerImg src={close} alt="close hamburger icon" />
             </StyledButton>
           ) : (
             <StyledButton
+              aria-label="open hamburger menu"
               onClick={() => {
                 setHamburgerOpen(true);
               }}
             >
-              <HamburgerImg src={hamburger} />
+              <HamburgerImg src={hamburger} alt="hamburger icon" />
             </StyledButton>
           )}
         </Links>

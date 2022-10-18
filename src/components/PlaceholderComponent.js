@@ -26,7 +26,7 @@ export default function PlaceholderComponent({ pageTitle }) {
           nunc. Magna aliquet auctor luctus risus pellentesque blandit tincidunt
           auctor.
         </Text>
-        <Image src={sampleImage} />
+        <Image src={sampleImage} alt="Image of a park"/>
       </Container>
     </Root>
   );

@@ -68,13 +68,28 @@ export default function CustomCarousel() {
           id="swiper"
         >
           <SwiperSlide>
-            <Image className={"sampleImage"} id="0" src={sampleImage} />
+            <Image
+              className={"sampleImage"}
+              id="0"
+              src={sampleImage}
+              alt="Image of a park"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Image className={"sampleImage"} id="1" src={sampleImage} />
+            <Image
+              className={"sampleImage"}
+              id="1"
+              src={sampleImage}
+              alt="Image of a park"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Image className={"sampleImage"} id="2" src={sampleImage} />
+            <Image
+              className={"sampleImage"}
+              id="2"
+              src={sampleImage}
+              alt="Image of a park"
+            />
           </SwiperSlide>
         </Swiper>
       </InView>
