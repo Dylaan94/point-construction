@@ -15,4 +15,6 @@
 - Uses react intersection observer to check whether component is in view before adding animations - better performacing than watchin for scroll positions
 - Very simple hamburger menu for mobile
 
+#### Demo:
+https://dylaan94.github.io/point-construction/
 
