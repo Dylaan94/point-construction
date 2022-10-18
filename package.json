@@ -8,6 +8,7 @@
     "gatsby"
   ],
   "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -31,5 +32,8 @@
     "react-intersection-observer": "^9.4.0",
     "styled-components": "^5.3.6",
     "swiper": "^8.4.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
