@@ -2,9 +2,9 @@
 
 import React from "react";
 import styled from "styled-components";
+import Footer from "./Footer";
 
 // component imports
-
 import Navbar from "./Navbar";
 
 export default function Layout({ children }) {
@@ -12,9 +12,9 @@ export default function Layout({ children }) {
     <Container>
       <Navbar />
       {children}
+      <Footer />
     </Container>
   );
 }
 
-const Container = styled.div`
-`;
+const Container = styled.div``;

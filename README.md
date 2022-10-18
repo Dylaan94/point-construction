@@ -7,4 +7,7 @@
 - API keys hidden in .env files
 - Built with components to encourage reusability
 - Compressed images for faster loading
+- Responsive slider built with Swiper.js
+- Clicking email link under 'Contact Us' opens up mail
+- Fully responsive across all device sizes
 
