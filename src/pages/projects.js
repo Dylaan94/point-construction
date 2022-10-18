@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
+
+// component imports
+import Layout from "../components/Layout";
+import PlaceholderComponent from "../components/PlaceholderComponent";
 
 export default function projects() {
   return (
-    <div>projects</div>
-  )
+    <Layout>
+      <PlaceholderComponent pageTitle={"Projects"} />
+    </Layout>
+  );
 }

@@ -103,5 +103,6 @@ const StyledLink = styled(Link)`
 
   :hover {
     opacity: 0.8;
+    cursor: pointer;
   }
 `;
