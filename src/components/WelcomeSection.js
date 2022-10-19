@@ -92,6 +92,7 @@ const Root = styled.div`
   margin-top: 20px;
   margin-bottom: 20px;
 
+  // media queries for responsiveness
   @media screen and (max-width: 550px) {
     height: auto;
   }
@@ -100,6 +101,7 @@ const Root = styled.div`
 const Container = styled.div`
   width: 50%;
 
+  // media queries for responsiveness
   @media screen and (max-width: 920px) {
     width: 80%;
   }
@@ -110,6 +112,7 @@ const Header = styled.h2`
   font-weight: 600;
   margin-top: 0;
 
+  // media queries for responsiveness
   @media screen and (max-width: 920px) {
     font-size: 32px;
     text-align: center;
@@ -125,6 +128,7 @@ const Tagline = styled.p`
   font-weight: 500;
   color: #c0b900;
 
+  // media queries for responsiveness
   @media screen and (max-width: 920px) {
     text-align: center;
   }
@@ -137,6 +141,7 @@ const Text = styled.div`
     margin-top: 10px;
   }
 
+  // media queries for responsiveness
   @media screen and (max-width: 920px) {
     text-align: center;
   }

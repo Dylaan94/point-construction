@@ -73,6 +73,7 @@ const Header = styled.h2`
   font-weight: 600;
   padding: 20px 0px;
 
+  // media queries for responsiveness
   @media screen and (max-width: 550px) {
     font-size: 16px;
   }
@@ -101,6 +102,7 @@ const ListItem = styled.li`
     color: white;
   }
 
+  // media queries for responsiveness
   @media screen and (max-width: 550px) {
     font-size: 14px;
   }

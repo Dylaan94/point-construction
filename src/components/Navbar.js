@@ -220,6 +220,7 @@ const HamburgerLinks = styled.div`
   flex-direction: column;
   background: #394659;
 
+  // media queries for responsiveness
   @media screen and (min-width: 1100px) {
     display: none;
   }
@@ -245,6 +246,8 @@ const StyledMobileLink = styled(Link)`
 // styled button for hamburger menu
 const StyledButton = styled.button`
   display: none;
+
+  // media queries for responsiveness
   @media screen and (max-width: 1100px) {
     display: inline;
     background: none;

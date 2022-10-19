@@ -10,6 +10,7 @@ import CustomSlider from "../components/CustomCarousel";
 import CustomTextSection from "../components/CustomTextSection";
 
 const IndexPage = () => {
+
   return (
     <Layout>
       <MainSection />

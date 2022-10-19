@@ -2,13 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { InView } from "react-intersection-observer";
 
-// Import Swiper React components
+// Swiper components and styles
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 
-// image import
+// image imports
 import sampleImage from "../images/sampleImage.png";
 
 // updates opacity to 1 for current slide
@@ -59,6 +57,7 @@ export default function CustomCarousel() {
             },
           }}
           onSlideChange={(swiper) => {
+            // gets slide index so that opacity can be appropriately updated
             resetOpacity(swiper.previousIndex);
             updateOpacity(swiper.activeIndex);
           }}
